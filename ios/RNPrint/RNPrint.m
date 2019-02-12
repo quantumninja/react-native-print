@@ -63,7 +63,7 @@ RCT_EXPORT_METHOD(print:(NSDictionary *)options
     // Create printing info
     UIPrintInfo *printInfo = [UIPrintInfo printInfo];
     
-    printInfo.outputType = UIPrintInfoOutputGeneral;
+    printInfo.outputType = UIPrintInfoOutputPhoto;
     printInfo.jobName = [_filePath lastPathComponent];
     printInfo.duplex = UIPrintInfoDuplexLongEdge;
     printInfo.orientation = _isLandscape? UIPrintInfoOrientationLandscape: UIPrintInfoOrientationPortrait;
